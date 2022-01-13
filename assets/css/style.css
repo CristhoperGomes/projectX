@@ -18,8 +18,8 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    
-    height: 550px;
+    position: relative;
+    height: 600px;
     width: 450px;
     background-color: hsl(216, 50%, 16%);
     padding: 10px 20px;
@@ -64,18 +64,23 @@ main .adicional-info{
     width: 100%;
     height: 1px;
     background-color: hsl(215, 32%, 27%);
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 .next{
+    position:absolute;
+    bottom: 25px;
+    right: 20px;
     display: flex;
     justify-content: end;
-    align-items: center;
+    align-items: center;    
 }
 .atual{
+    position:absolute;
+    bottom: 25px;
     display: flex;
     justify-content: left;
-    align-items: center;
+    align-items: center;    
 }
 .next a,
 .atual a{
@@ -104,7 +109,7 @@ main .adicional-info{
 @media (max-width:480px) { /* smartphones, Android phones, landscape iPhone */ 
     .container{
         width: 300px;
-        height: 495px;
+        height: 515px;
         padding: 10px;
     }
     .imagem,
